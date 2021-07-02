@@ -1,4 +1,4 @@
-# Ruby Install Sample
+# Fast Ruby Install
 
 brew, rbenv, ruby-buildを用いて、任意のruby, rubygems, bundlerバージョンをインストールするスクリプトです。  
 
