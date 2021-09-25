@@ -76,17 +76,17 @@ function install() {
 	rm .ruby-version
 }
 
-# ruby 2.6.5の環境
-RUBY=2.6.5
-GEM=3.1.2
-BUNDLERS=(2.1.4)
-
-install ${RUBY} ${GEM} ${BUNDLERS[@]}
-
 # ruby 2.6.7の環境
 RUBY=2.6.7
 GEM=3.2.17
 BUNDLERS=(1.17.3 2.2.17)
+
+install ${RUBY} ${GEM} ${BUNDLERS[@]}
+
+# ruby 2.7.3の環境
+RUBY=2.7.3
+GEM=3.2.28
+BUNDLERS=(2.2.28)
 
 install ${RUBY} ${GEM} ${BUNDLERS[@]}
 
