@@ -21,5 +21,5 @@ BUNDLERS=(1.17.3 2.2.17)
 **Run script**
 
 ```bash
-$ bash run.bash
+$ bash run.sh
 ```
