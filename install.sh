@@ -6,13 +6,13 @@ set -euxo pipefail
 function distill() {
 	brew update
 
-	while read formula; do
+	for formula in (rbenv ruby-build); do
 		if [[ $(brew list --formula | grep -e ${formula}) ]]; then
 			brew upgrade ${formula}
 		else
 			brew install ${formula}
 		fi
-	done < (rbenv ruby-build)
+	done
 
 	brew cleanup
 }
