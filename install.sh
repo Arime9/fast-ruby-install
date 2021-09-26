@@ -6,7 +6,8 @@ set -euxo pipefail
 function distill() {
 	brew update
 
-	for formula in (rbenv ruby-build); do
+	formulae=(rbenv ruby-build)
+	for formula in ${formulae} ; do
 		if [[ $(brew list --formula | grep -e ${formula}) ]]; then
 			brew upgrade ${formula}
 		else
