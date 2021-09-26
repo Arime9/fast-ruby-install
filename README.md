@@ -1,6 +1,8 @@
 # Fast Ruby Install
 
-brewを用いて最新バージョンのrbenv, ruby-buildと、指定したバージョンのruby, rubygems, bundlerをインストールするスクリプトです。  
+[Homebrew](https://brew.sh/index_ja) を用いて、rbenv, ruby-build, ruby, rubygems, bundlerをインストールするスクリプトです。  
+
+rbenv, ruby-buildは最新バージョンを、ruby, rubygems, bundlerは指定したバージョンをインストールします。
 
 ## Installation
 
