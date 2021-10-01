@@ -107,3 +107,6 @@ install ${RUBY} ${GEM} ${BUNDLERS[@]}
 # グローバルrubyバージョンを設定する
 rbenv global ${RUBY}
 rbenv versions
+
+# bundlerのconfigを設定する
+bundler config set path vendor/bundle
