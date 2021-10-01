@@ -90,6 +90,6 @@ BUNDLERS=(2.2.28)
 
 install ${RUBY} ${GEM} ${BUNDLERS[@]}
 
-# rubyのグローバル環境
+# グローバルrubyバージョンを設定する
 rbenv global ${RUBY}
 rbenv versions

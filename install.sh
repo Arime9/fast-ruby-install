@@ -82,13 +82,13 @@ while (( $# > 0 ))
 do
     case $1 in
         -*)
-            if [[ "$1" =~ 'ruby' ]]; then
+            if [[ "$1" == '-r' ]] || [[ "$1" =~ 'ruby' ]] ; then
                 RUBY=$2
             fi
-            if [[ "$1" =~ 'gem' ]]; then
+            if [[ "$1" == '-g' ]] || [[ "$1" =~ 'gem' ]] ; then
                 GEM=$2
             fi
-            if [[ "$1" =~ 'bundlers' ]]; then
+            if [[ "$1" == '-b' ]] || [[ "$1" =~ 'bundlers' ]] ; then
                 BUNDLERS=$2
             fi
             shift
@@ -104,6 +104,6 @@ done
 
 install ${RUBY} ${GEM} ${BUNDLERS[@]}
 
-# rubyのグローバル環境
+# グローバルrubyバージョンを設定する
 rbenv global ${RUBY}
 rbenv versions
