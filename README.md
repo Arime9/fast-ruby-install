@@ -16,7 +16,7 @@ rbenv, ruby-buildは最新バージョンを、ruby, rubygems, bundlerは指定�
 curl -fsSL https://raw.githubusercontent.com/Tea-and-Coffee/fast-ruby-install/master/install.sh | bash -s -- --ruby 2.7.3 --gem 3.2.28 --bundlers 2.2.28
 ```
 
-## Other Usage
+## Other Installation
 
 スクリプトファイルを編集して実行したい場合のために、run.shを用意しています。
 
