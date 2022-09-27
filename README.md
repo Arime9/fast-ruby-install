@@ -6,9 +6,10 @@ rbenv, ruby-buildは最新バージョンを、ruby, rubygems, bundlerは指定�
 
 ## Installation
 
-後述の `--ruby 2.7.3` `--gem 3.2.28` `--bundlers 2.2.28` にインストールしたいソフトウェアバージョンを指定して、ターミナルで実行して下さい。
+後述の `--ruby 2.7.6` `--gem 3.3.22` `--bundlers 2.3.22` にインストールしたいソフトウェアバージョンを指定して、ターミナルで実行して下さい。
 
-※ bundlerを複数インストールしたい場合は `--bundlers '1.17.3 2.2.28'` の様にします。
+※ rubygemsの最新バージョンをインストールしたい場合は `--gem latest` と入力します。  
+※ bundlerを複数インストールしたい場合は `--bundlers '1.17.3 2.3.22'` の様にします。  
 
 **Run Example**
 
