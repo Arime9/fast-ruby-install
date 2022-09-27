@@ -42,7 +42,11 @@ function install() {
 	ruby --version
 
 	# rubygemsのインストール
-	gem update --system $2
+	if [[ $2 = "latest" ]]; then
+		gem update --system
+	else
+		gem update --system $2
+	fi
 	gem environment
 
 	shift
