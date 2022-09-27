@@ -56,7 +56,11 @@ function install() {
 	for VERSION in $@; do
 		set +x
 
-		CMD="gem install bundler --version ${VERSION}"
+		if [[ ${VERSION} = "latest" ]]; then
+			CMD="gem install bundler"
+		else
+			CMD="gem install bundler --version ${VERSION}"
+		fi
 
 		expect -c "
 		set timeout -1
