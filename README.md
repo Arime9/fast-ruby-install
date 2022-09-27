@@ -13,7 +13,7 @@ rbenv, ruby-buildは最新バージョンを、ruby, rubygems, bundlerは指定�
 **Run Example**
 
 ```
-curl -fsSL https://raw.githubusercontent.com/Tea-and-Coffee/fast-ruby-install/master/install.sh | bash -s -- --ruby 2.7.3 --gem 3.2.28 --bundlers 2.2.28
+curl -fsSL https://raw.githubusercontent.com/Tea-and-Coffee/fast-ruby-install/master/install.sh | bash -s -- --ruby 2.7.6 --gem 3.3.22 --bundlers 2.3.22
 ```
 
 ## Other Installation
