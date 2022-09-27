@@ -14,7 +14,8 @@ rbenv, ruby-buildは最新バージョンを、ruby, rubygems, bundlerは指定�
 curl -fsSL https://raw.githubusercontent.com/Tea-and-Coffee/fast-ruby-install/master/install.sh | bash -s -- --ruby 2.7.6 --gem 3.3.22 --bundlers 2.3.22
 ```
 
-※ rubygemsの最新バージョンをインストールしたい場合は `--gem latest` と入力します。  
+※ rubygemsの最新バージョンをインストールしたい場合、`--gem latest` と入力します。  
+※ bundlerの最新バージョンをインストールしたい場合、`--bundlers latest` と入力します。  
 ※ bundlerを複数インストールしたい場合は `--bundlers '1.17.3 2.3.22'` の様にします。 
 
 ## Other Installation
