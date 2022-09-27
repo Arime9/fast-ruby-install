@@ -29,7 +29,11 @@ function install() {
 		export warnflags=-Wno-error=implicit-function-declaration
 	fi
 
-	rbenv install --skip-existing $1
+	if [[ "$(uname)" == 'Darwin' ]] && [[ "$(uname -m)" == 'x86_64' ]] ; then
+		rbenv install --skip-existing $1
+	elif [[ "$(uname)" == 'Darwin' ]] && [[ "$(uname -m)" == 'arm64' ]] ; then
+		RUBY_CFLAGS=-DUSE_FFI_CLOSURE_ALLOC rbenv install --skip-existing $1
+	fi
 
 	if [[ $1 = "2.6.7" ]]; then
 		export -n warnflags
@@ -39,7 +43,11 @@ function install() {
 	ruby --version
 
 	# rubygemsのインストール
-	gem update --system $2
+	if [[ $2 = "latest" ]]; then
+		gem update --system
+	else
+		gem update --system $2
+	fi
 	gem environment
 
 	shift
